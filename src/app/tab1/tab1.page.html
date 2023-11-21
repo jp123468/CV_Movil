@@ -1,17 +1,96 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="secondary">
+
+      <ion-button fill="outline" href="https://github.com/jp123468">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        Contact
+      </ion-button>
+    </ion-buttons>
     <ion-title>
-      Tab 1
+      José Panchi
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content >
+  
+  <ion-item>
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="https://scontent.fuio5-1.fna.fbcdn.net/v/t39.30808-6/327629570_1302963617213319_1658510289154063415_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFd9xN_JNt8Rp8nM6UG1j_lANDey77tsZQA0N7Lvu2xlPK4jTGLmWRa7pwmyzUVDg4O272jXOrIWuA42pEBWWeD&_nc_ohc=utmFKYnkcLAAX-aeH2W&_nc_ht=scontent.fuio5-1.fna&oh=00_AfCYIPB560Loe3fUKc-PT9HWLky_nLXOo1qP7eOUALsl_Q&oe=6560EDD2" />
+    </ion-avatar>
+    <ion-list>      
+      <ion-item>
+        <ion-textarea labelPlacement="floating" value="Developer Backend Junior">
+          <div slot="label"> <ion-text color="success">(Position)</ion-text></div>
+        </ion-textarea>
+      </ion-item>    
+      <ion-item>
+        <ion-textarea labelPlacement="floating" value="Ecuador, Quito">
+          <div slot="label"> <ion-text color="success">(Living)</ion-text></div>
+        </ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-textarea labelPlacement="floating" value="Student at EPN">
+          <div slot="label"> <ion-text color="success">(University)</ion-text></div>
+        </ion-textarea>
+      </ion-item>
+    </ion-list>
+  </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="ion-padding">
+    <ion-label  color="secondary">
+      <h1> Frameworks and Lenguages </h1>      
+    </ion-label>
+    <ion-grid [fixed]="true">
+      <ion-row>
+        <ion-col>
+          <ion-icon name="logo-python" size="large" color="success"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="logo-javascript" size="large" color="success"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="logo-nodejs" size="large" color="success"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-icon name="logo-tux" size="large" color="success"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="logo-sass" size="large" color="success"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="logo-angular" size="large" color="success"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="logo-firebase" size="large" color="success"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>    
+    <ion-label  color="secondary">
+      <h1> Experience </h1>      
+    </ion-label>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Villagomez Capital</ion-card-title>
+        <ion-card-subtitle color="tertiary"> Intern from software </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://media.licdn.com/dms/image/C4E0BAQFmG-OfXAnCHw/company-logo_200_200/0/1672768425525/villagomezcapital_logo?e=2147483647&v=beta&t=9jHE5nqOKb19KCieEBOrmq-a18YXTZKeG29MJ8czrwc" />
+            </ion-thumbnail>
+            <p>
+              Work with JavaScript, Angular, PrimeNG, PrimeFlex, MySQL, Firebase
+            </p>
+          </ion-item>         
+        </ion-list>
+      </ion-card-content>      
+    </ion-card>
+    
+  </div>
+  
 </ion-content>
